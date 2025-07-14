@@ -2,58 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>G4M3R - Game On</title>
+    <title>Simple Calculator</title>
     <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="logo">🎮 G4M3R</div>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>Calculator</h1>
+      <div class="calculator">
+        <input type="text" id="display" disabled />
+        <div class="buttons">
+          <button onclick="clearDisplay()">C</button>
+          <button onclick="deleteLast()">⌫</button>
+          <button onclick="appendValue('/')">÷</button>
+          <button onclick="appendValue('*')">×</button>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-      <h1>Welcome to the Ultimate Gaming Zone</h1>
-      <p>Unleash your inner warrior. Play. Compete. Win.</p>
-      <a href="#features" class="btn">Explore Games</a>
-    </section>
+          <button onclick="appendValue('7')">7</button>
+          <button onclick="appendValue('8')">8</button>
+          <button onclick="appendValue('9')">9</button>
+          <button onclick="appendValue('-')">−</button>
 
-    <!-- Features Section -->
-    <section class="features" id="features">
-      <h2>Top Features</h2>
-      <div class="cards">
-        <div class="card">⚔️ Battle Royale Mode</div>
-        <div class="card">🕹️ Multiplayer Arena</div>
-        <div class="card">💬 Live Voice Chat</div>
+          <button onclick="appendValue('4')">4</button>
+          <button onclick="appendValue('5')">5</button>
+          <button onclick="appendValue('6')">6</button>
+          <button onclick="appendValue('+')">+</button>
+
+          <button onclick="appendValue('1')">1</button>
+          <button onclick="appendValue('2')">2</button>
+          <button onclick="appendValue('3')">3</button>
+          <button onclick="calculate()">=</button>
+
+          <button onclick="appendValue('0')">0</button>
+          <button onclick="appendValue('.')">.</button>
+        </div>
       </div>
-    </section>
+    </div>
 
-    <!-- About Section -->
-    <section class="about">
-      <h2>About G4M3R</h2>
-      <p>
-        G4M3R is a gaming hub for enthusiasts who breathe games. Join live
-        battles, compete with pros, and climb the leaderboard. Powered by pure
-        adrenaline.
-      </p>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-      <h2>Contact Us</h2>
-      <p>Email: support@g4m3rzone.com</p>
-      <p>Discord: G4M3R#2025</p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2025 G4M3R. All rights reserved.</p>
-    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
